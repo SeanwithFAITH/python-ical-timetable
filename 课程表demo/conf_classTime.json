@@ -1,0 +1,39 @@
+{
+  "classTime": [
+    {
+        "name":" 1-2节",
+        "startTime":"0900",
+        "endTime":"1050"
+    },
+    {
+        "name":" 3-4节",
+        "startTime":"1110",
+        "endTime":"1300"
+    },
+     {
+        "name":" 5-6节",
+        "startTime":"1430",
+        "endTime":"1610"
+    },
+   {
+        "name":" 5-7节",
+        "startTime":"1430",
+        "endTime":"1710"
+    },
+    {
+        "name":" 5-8节",
+        "startTime":"1430",
+        "endTime":"1800"
+    },	
+    {
+        "name":"7-8节",
+        "startTime":"1610",
+        "endTime":"1800"
+    },
+    {
+        "name":"9-11节",
+        "startTime":"1900",
+        "endTime":"2150"
+    }
+  ]
+}

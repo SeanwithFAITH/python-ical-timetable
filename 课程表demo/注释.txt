@@ -1,0 +1,6 @@
+1. 这个conf_classTime 数组的顺序对应excel 中的classtime 的数字。
+2. 时间可能是有bug，日历里的时间会比conf_classTime 早一个小时。
+3. 运行这个文件的顺序是先改excel，运行excelReader，生成info文件后，运行main
+4. python要在2.7的版本环境运行，现在anaconda中换成2.7，然后用pycharm
+5. 日历导入一定要小心，因为导入很难删除，新建一个日历再导入比较妥当，比较好删
+6. 这学期应该还会批量改一次，因为第10周可能不放假。
