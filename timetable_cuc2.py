@@ -1,9 +1,9 @@
 import datetime
 from datetime import datetime, timedelta
 
-maxWeek = 20; maxWeek += 1
-classTime = [None, (8, 0), (8, 55), (10, 15), (11, 10), (14, 00), (14, 55), 
-	(16, 15), (17, 10), (19, 0), (19, 55), (20, 50), (21, 45)]
+maxWeek = 16+1
+classTime = [None, (8, 00), (9, 00), (10, 10), (11, 10), (13, 30), (14, 30),
+	(15, 20), (16, 00), (18, 00), (19, 00), (20, 00),(21, 00)]
 weeks = [None]
 starterDay = datetime(2020, 9, 7)
 for i in range(1, maxWeek):
@@ -122,7 +122,7 @@ X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-MAPKIT-HANDLE=;X-APPLE-RADIUS=200;
 		classDate = weeks[timeWeek][classWeekday]
 		startTime = classTime[classOrder[0]]; endTime = classTime[classOrder[-1]]
 		classStartTime = classDate + timedelta(minutes = startTime[0] * 60 + startTime[1])
-		classEndTime = classDate + timedelta(minutes = endTime[0] * 60 + endTime[1] + 45)
+		classEndTime = classDate + timedelta(minutes = endTime[0] * 60 + endTime[1] + 50)
 		Description = classID + " 任课教师: " + Teacher + "。"
 		vEvent = "\nBEGIN:VEVENT"
 		vEvent += "\nDTEND;TZID=Asia/Shanghai:" + classEndTime.strftime('%Y%m%dT%H%M%S')
@@ -135,6 +135,6 @@ X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-MAPKIT-HANDLE=;X-APPLE-RADIUS=200;
 
 allvEvent += "\nEND:VCALENDAR"
 
-jWrite = open("cqupt_20201.ics", "w")
+jWrite = open("2020秋.ics", "w")
 jWrite.write(iCalHeader + allvEvent)
 jWrite.close()
